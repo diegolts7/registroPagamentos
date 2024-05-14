@@ -1,0 +1,50 @@
+.modal {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    
+}
+.modalCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -28vh;
+    width: 55vh;
+    max-height: 23vh;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 1rem;
+    animation: animacaoModal .3s forwards ease;
+
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.modalCadastro input[type="button"] {
+    margin-left: auto;
+    width: 8vh;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+}
+
+@keyframes animacaoModal {
+    0%{
+        margin-top: -28vh;
+    }100%{
+        margin-top: 5vh;
+    }
+}
