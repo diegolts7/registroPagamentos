@@ -52,7 +52,9 @@ class ModalCentral extends Modal {
 
 class Despesa {
   constructor(tipo, descricao, valor) {
-    this.data = `${new Date().getDay()}/${new Date().getMonth()}/${new Date().getFullYear()}`;
+    this.ano = new Date().getFullYear();
+    this.mes = new Date().getMonth();
+    this.dia = new Date().getDay();
     this.tipo = tipo;
     this.descricao = descricao;
     this.valor = valor;

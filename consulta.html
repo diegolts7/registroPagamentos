@@ -82,23 +82,39 @@
       </div>
 
       <div class="row mb-2">
-        <div class="col-md-4">
+        <div class="col-md-2">
           <input
             type="number"
             class="form-control"
-            id="campoData"
-            placeholder="Data: xx/xx/xxxx"
+            id="campoDia"
+            placeholder="Dia"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            type="number"
+            class="form-control"
+            id="campoMes"
+            placeholder="Mês"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            type="number"
+            class="form-control"
+            id="campoAno"
+            placeholder="Ano"
           />
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-5">
           <select class="form-control" id="tipo">
             <option>Tipo</option>
-            <option value="1">Alimentação</option>
-            <option value="2">Educação</option>
-            <option value="3">Lazer</option>
-            <option value="4">Saúde</option>
-            <option value="5">Transporte</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Educação">Educação</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Transporte">Transporte</option>
           </select>
         </div>
       </div>
@@ -123,7 +139,7 @@
         </div>
 
         <div class="col-md-2 d-flex justify-content-first">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" id="pesquisarDespesas">
             <i class="fas fa-search"></i>
           </button>
         </div>
