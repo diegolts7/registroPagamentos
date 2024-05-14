@@ -22,6 +22,8 @@ let pesquisa = false;
 
 // orientação a objetos
 
+//obj lista
+
 const listaDespesas = {
   lerDespesas() {
     return localStorage.getItem("listaDespesas")
